@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <htm lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>YouTube Q&A</title>
-  <link rel="stylesheet" type="text/css" href="popup.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-  <script src="popup.js" defer></script>
-  <!-- <script type="module" src="https://unpkg.com/youtube-transcript@1.0.6/dist/youtube-transcript.esm.js"></script> -->
-  <script type="module" src="content.js" defer></script>
 
-</head>
-<body>
-  <div class="chatPannel">
-    <header>
-        <h2>Chatbot</h2>
-    </header>
-    <ul class="chatbox">
-        <li class="chat incoming">
-          <span class="material-symbols-outlined">face_4</span>
-          <p>Hi there 👋<br>How can I help you today?</p>
-        </li>
-      </ul>
+  <head>
+    <meta charset="utf-8">
+    <title>YouTube Q&A</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="popup.js" defer></script>
+    <!-- <script type="module" src="https://unpkg.com/youtube-transcript@1.0.6/dist/youtube-transcript.esm.js"></script> -->
+    <script type="module" src="content.js" defer></script>
+
+  </head>
+
+  <body>
+    <div class="chatPannel">
+      <div class="chatpanelHeader">
+        <div class="profileImageBox">
+         <!-- <img class="profileImageBoxValue" src="./images/profile.png" alt=""> -->
+         <span class="material-symbols-outlined" style="font-size:30px; color: rgb(255, 0, 0);">face_4</span>
+        </div>
+        <div class="profileNameBox">
+          <div class="profileNameBoxName">YouTube Q&A</div>
+          <div class="profileNameBoxStatus">online</div>
+        </div>
+
+      </div>
+      <div class="chatbox">
+        <div class="chat incoming">
+          <span class="material-symbols-outlined" style="color: #ff0000 !important;">face_4</span>
+          <p>Hi there 👋<br>Lets help you understand the video better.</p>
+        </div>
+      </div>
       <div class="chat-input">
         <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-        <span id="send-btn" class="material-symbols-rounded">send</span>
+        <span id="send-btn" class="material-symbols-rounded" style="color: #ff0000;">send</span>
       </div>
-  </div>
- 
-  <!-- <textarea id="question" placeholder="Ask a question..."></textarea>
+    </div>
+
+    <!-- <textarea id="question" placeholder="Ask a question..."></textarea>
   <button id="askButton">Ask</button>
   <script src="popup.js"></script> -->
-</body>
-</html>
+  </body>
+
+  </html>

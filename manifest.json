@@ -3,7 +3,7 @@
     "name": "YouTube Q&A",
     "version": "1.0",
     "description": "Ask questions about YouTube videos using ChatGPT",
-    "permissions": ["activeTab", "storage","tabs"],
+    "permissions": ["activeTab", "storage","tabs", "storage"],
     "background.service_worker": {
         "scripts": ["background.js"],
         "persistent": false
