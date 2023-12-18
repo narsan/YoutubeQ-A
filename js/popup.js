@@ -9,18 +9,18 @@ async function loadConfig() {
 }
 
 async function myReloadMethod() {
-    //get video ID
+    // get video ID
     videoId = await getYouTubeVideoId();
-     //set Api Key from conf.json
+     // set Api Key from conf.json
      await loadConfig();
-     //if the transcript is unavalable in local memory get it from transcript api and update the local storage data
+     // If transcript is unavailable locally, fetch it from API and update local storage.
      GetTranscript(videoId);
-    //if user has chat about this video with bot load it 
+    // Load user’s previous chat if applicable
     ShowChatHistory();
    
 }
 
-// if the page has been reloaded this method should be call
+// Handling page reload
 window.onload = function () {
     myReloadMethod();
 };

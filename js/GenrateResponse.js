@@ -22,7 +22,7 @@ async function CallOpenAI(transcript, chatElement) {
     storedQuestionList = storedQuestionList ? JSON.parse(storedQuestionList) : [];
     
     
-    //calling openAI api
+    //calling openAI API
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const messageElement = chatElement.querySelector("p");
     const requestOptions = {
