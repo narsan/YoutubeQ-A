@@ -18,13 +18,13 @@ async function getYouTubeVideoId() {
 async function GetTranscript(videoId) {
     try {
         var storedVideoId = localStorage.getItem('videoId');
-        //if the video isn't change load the transcript from local storage
+        // If the video hasn't changed, load the transcript from local storage.
         if (videoId === storedVideoId) {
             transcript = localStorage.getItem('transcript')
             if (transcript != null)
                 return transcript;
         }
-        // if the video has been changed clear loacl memory and call transcript API
+        // If the video has changed, clear local memory and call the transcript API.
         localStorage.clear();
         localStorage.setItem('videoId', videoId);
         transcript = await CallTranscriptAPI(videoId);
@@ -36,7 +36,7 @@ async function GetTranscript(videoId) {
 }
 
 
-//get transcript from Api and set it in local storage 
+//get transcript from API and set it in local storage 
 async function CallTranscriptAPI(videoid) {
     const url = `https://youtube-captions-and-transcripts.p.rapidapi.com/getCaptions?videoId=${videoid}&lang=en&format=json`;
     console.log(url)
