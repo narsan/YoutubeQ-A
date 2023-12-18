@@ -1,4 +1,4 @@
 {
-    "OPENAI_API_KEY": "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",
-    "YOUTUBE_API_KEY" : "17b0f141c8msh1a0657bb5e661d5p1fb3b2jsnfe8805873c51" 
+    "OPENAI_API_KEY": "Paste your openAI API key here",
+    "YOUTUBE_API_KEY" : "Paste your RapidAI Youtube Captions and Transcripts API here" 
 }
